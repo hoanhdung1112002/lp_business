@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('FuturaCyrillicBook.woff2') format('woff2'),
+        url('FuturaCyrillicBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('YuGothic.woff2') format('woff2'),
+        url('YuGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

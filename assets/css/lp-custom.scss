@@ -6,32 +6,32 @@ body {
 @keyframes scale3dImg {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
     }
 
     5% {
-        -webkit-transform: scale3d(0.98, 0.97, 0.98);
-        transform: scale3d(0.98, 0.97, 0.98);
+        -webkit-transform: scale3d(0.91, 0.84, 0.85);
+        transform: scale3d(0.91, 0.84, 0.85)
     }
 
     10% {
-        -webkit-transform: scale3d(0.99, 0.98, 0.99);
-        transform: scale3d(0.99, 0.98, 0.99);
+        -webkit-transform: scale3d(0.93, 0.86, 0.84);
+        transform: scale3d(0.93, 0.86, 0.84)
     }
 
     26% {
-        -webkit-transform: scale3d(1.01, 1.01, 1.01);
-        transform: scale3d(1.01, 1.01, 1.01);
+        -webkit-transform: scale3d(0.94, 0.97, 0.98);
+        transform: scale3d(0.94, 0.97, 0.98)
     }
 
     80% {
-        -webkit-transform: scale3d(1, 1.01, 1);
-        transform: scale3d(1, 1.01, 1);
+        -webkit-transform: scale3d(0.97, 0.99, 0.91);
+        transform: scale3d(0.97, 0.99, 0.91)
     }
 
     100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(0.99, 0.91, 0.99);
+        transform: scale3d(0.99, 0.91, 0.99)
     }
 }
 
@@ -194,7 +194,9 @@ body {
                     background: #FFF;
                     cursor: pointer;
                     h3 {
-                        max-width: 501px;
+                        position: relative;
+                        max-width: 556px;
+                        padding-left: 55px;
                         flex: 1;
                         text-align: left;
                         margin: 0;
@@ -204,6 +206,18 @@ body {
                         font-weight: 700;
                         line-height: 120%;
                         letter-spacing: 2.223px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background: url(../images/faq/Q.webp) no-repeat;
+                            background-position: left center;
+                            background-size: cover;
+                            width: 33px;
+                            height: 32px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
                     }
                     .faq-plus {
                         position: absolute;
@@ -260,25 +274,34 @@ body {
                 }
                 .faq-content {
                     display: none;
-                    ul {
-                        li {
-                            padding: 29px 21px 32px 23px;
-                            display: flex;
-                            align-items: flex-start;
-                            gap: 0 20px;
-                            border: 1px solid #786F63;
-                            border-top: none;
-                            background: #FFF;
-                            p {
-                                margin: 0;
-                                text-align: left;
-                                color: #727171;
-                                font-family: 'Yu Gothic';
-                                font-size: 24px;
-                                font-weight: 500;
-                                line-height: 40.8px;
-                                letter-spacing: 1.92px;
-                            }
+                    padding: 29px 21px 32px 23px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0 20px;
+                    border: 1px solid #786F63;
+                    border-top: none;
+                    background: #FFF;
+                    p {
+                        position: relative;
+                        padding-left: 50px;
+                        margin: 0 0 20px 0;
+                        text-align: left;
+                        color: #727171;
+                        font-family: 'Yu Gothic';
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 40.8px;
+                        letter-spacing: 1.92px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background: url(../images/faq/A.webp) no-repeat;
+                            background-position: left center;
+                            background-size: cover;
+                            width: 30px;
+                            height: 57px;
+                            left: 0;
+                            top: 4px;
                         }
                     }
                 }
@@ -448,9 +471,14 @@ body {
                     max-width: 5vw;
                 }
                 h3 {
-                    max-width: 66.8vw;
+                    max-width: 74.133vw;
+                    padding-left: 7.333vw;
                     font-size: 3.733vw;
                     letter-spacing: 0.31vw;
+                    &::after {
+                        width: 4.4vw;
+                        height: 4.267vw;
+                    }
                 }
                 .faq-plus {
                     right: 2.933vw;
@@ -465,21 +493,22 @@ body {
                 }
               }
               .faq-content {
-                ul {
-                  li {
-                    padding: 3.87vw 2.8vw 4.27vw 3.07vw;
-                    gap: 0 2.67vw;
-                    border: 0.13vw solid #786f63;
-                    img {
-                        max-width: 4.4vw;
-                    }
-                    p {
-                      font-size: 3.2vw;
-                      line-height: 5.467vw;
-                      letter-spacing: 0.256vw;
+                  padding: 3.87vw 2.8vw 4.27vw 3.07vw;
+                  gap: 0 2.67vw;
+                  border: 0.13vw solid #786f63;
+                  border-top: none;
+                  p {
+                    padding-left: 6.667vw;
+                    margin-bottom: 2.667vw;
+                    font-size: 3.2vw;
+                    line-height: 5.467vw;
+                    letter-spacing: 0.256vw;
+                    &::after {
+                        width: 4vw;
+                        height: 7.6vw;
+                        top: 0.533vw;
                     }
                   }
-                }
               }
             }
           }

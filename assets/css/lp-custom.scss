@@ -185,6 +185,7 @@ body {
                 margin: 0;
                 padding: 0;
                 .faq-title {
+                    position: relative;
                     padding: 20px 23px;
                     display: flex;
                     align-items: center;
@@ -193,6 +194,7 @@ body {
                     background: #FFF;
                     cursor: pointer;
                     h3 {
+                        max-width: 501px;
                         flex: 1;
                         text-align: left;
                         margin: 0;
@@ -204,7 +206,8 @@ body {
                         letter-spacing: 2.223px;
                     }
                     .faq-plus {
-                        position: relative;
+                        position: absolute;
+                        right: 22px;
                         span {
                             display: block;
                             width: 25px;
@@ -213,7 +216,8 @@ body {
                             position: absolute;
                             right: 0;
                             background:#C1A783;
-                            top: calc(50% - 3px);
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
                         .faq-x {
                             display: block;
@@ -223,7 +227,8 @@ body {
                             position: absolute;
                             right: 0;
                             background:#C1A783;
-                            top: calc(50% - 3px);
+                            top: 50%;
+                            transform: translateY(-50%);
                             transition: 0.6s;
                             transform: rotate(-180deg);
                         }
@@ -443,19 +448,19 @@ body {
                     max-width: 5vw;
                 }
                 h3 {
-                  font-size: 3.733vw;
-                  letter-spacing: 0.31vw;
+                    max-width: 66.8vw;
+                    font-size: 3.733vw;
+                    letter-spacing: 0.31vw;
                 }
                 .faq-plus {
+                    right: 2.933vw;
                   span {
                     width: 4vw;
                     height: 0.5vw;
-                    top: calc(50% - 0.4vw);
                   }
                   .faq-x {
                     width: 4vw;
                     height: 0.5vw;
-                    top: calc(50% - 0.4vw);
                   }
                 }
               }

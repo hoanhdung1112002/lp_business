@@ -156,7 +156,7 @@ body {
 }
 #lp_business * .faq-main ul .faq-title, #lp_business * .faq-main li .faq-title {
   position: relative;
-  padding: 20px 23px;
+  padding: 23px;
   display: flex;
   align-items: center;
   gap: 0 20px;
@@ -242,7 +242,6 @@ body {
   opacity: 1;
 }
 #lp_business * .faq-main ul .faq-content, #lp_business * .faq-main li .faq-content {
-  display: none;
   padding: 29px 21px 32px 23px;
   display: flex;
   flex-direction: column;
@@ -250,20 +249,12 @@ body {
   border: 1px solid #786F63;
   border-top: none;
   background: #FFF;
+  display: none;
 }
-#lp_business * .faq-main ul .faq-content p, #lp_business * .faq-main li .faq-content p {
+#lp_business * .faq-main ul .faq-content .faq-answer, #lp_business * .faq-main li .faq-content .faq-answer {
   position: relative;
-  padding-left: 50px;
-  margin: 0 0 20px 0;
-  text-align: left;
-  color: #727171;
-  font-family: "Yu Gothic";
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 40.8px;
-  letter-spacing: 1.92px;
 }
-#lp_business * .faq-main ul .faq-content p::after, #lp_business * .faq-main li .faq-content p::after {
+#lp_business * .faq-main ul .faq-content .faq-answer::after, #lp_business * .faq-main li .faq-content .faq-answer::after {
   content: "";
   position: absolute;
   background: url(../images/faq/A.webp) no-repeat;
@@ -272,7 +263,30 @@ body {
   width: 30px;
   height: 57px;
   left: 0;
-  top: 4px;
+  top: 0;
+}
+#lp_business * .faq-main ul .faq-content .faq-answer p, #lp_business * .faq-main li .faq-content .faq-answer p {
+  padding-left: 50px;
+  margin: 0;
+  text-align: left;
+  color: #727171;
+  font-family: "Yu Gothic";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40.8px;
+  letter-spacing: 1.92px;
+}
+#lp_business * .faq-main .faq-item:nth-of-type(2) .faq-title {
+  padding-top: 20px;
+  padding-bottom: 17px;
+}
+#lp_business * .faq-main .faq-item:nth-of-type(4) .faq-title {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+#lp_business * .faq-main .faq-item:nth-of-type(5) .faq-title {
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 #lp_business * .footer-container {
   position: relative;
@@ -401,77 +415,66 @@ body {
     margin-bottom: 13.33vw;
   }
   #lp_business * .faq {
-    padding-bottom: 9.33vw;
+    padding-bottom: 9.333vw;
   }
   #lp_business * .faq-container {
-    padding-top: 9.47vw;
-  }
-  #lp_business * .faq-container > img {
-    max-width: 35.733vw;
+    padding-top: 9.467vw;
   }
   #lp_business * .faq-main {
     margin-top: 10.4vw;
-    padding: 0 6.67vw;
+    padding: 0 6.667vw;
   }
   #lp_business * .faq-main ul {
-    gap: 2.93vw 0;
+    gap: 2.933vw 0;
   }
-  #lp_business * .faq-main ul .faq-title,
-  #lp_business * .faq-main li .faq-title {
-    padding: 2.67vw 3.07vw;
-    gap: 0 2.67vw;
-    border: 0.13vw solid #786f63;
+  #lp_business * .faq-main ul .faq-title, #lp_business * .faq-main li .faq-title {
+    padding: 3.067vw;
+    gap: 0 2.667vw;
+    border: 0.133vw solid #786F63;
   }
-  #lp_business * .faq-main ul .faq-title img,
-  #lp_business * .faq-main li .faq-title img {
-    max-width: 5vw;
-  }
-  #lp_business * .faq-main ul .faq-title h3,
-  #lp_business * .faq-main li .faq-title h3 {
+  #lp_business * .faq-main ul .faq-title h3, #lp_business * .faq-main li .faq-title h3 {
     max-width: 74.133vw;
     padding-left: 7.333vw;
-    font-size: 3.733vw;
-    letter-spacing: 0.31vw;
+    font-size: 3.707vw;
+    letter-spacing: 0.296vw;
   }
-  #lp_business * .faq-main ul .faq-title h3::after,
-  #lp_business * .faq-main li .faq-title h3::after {
+  #lp_business * .faq-main ul .faq-title h3::after, #lp_business * .faq-main li .faq-title h3::after {
     width: 4.4vw;
     height: 4.267vw;
   }
-  #lp_business * .faq-main ul .faq-title .faq-plus,
-  #lp_business * .faq-main li .faq-title .faq-plus {
+  #lp_business * .faq-main ul .faq-title .faq-plus, #lp_business * .faq-main li .faq-title .faq-plus {
     right: 2.933vw;
   }
-  #lp_business * .faq-main ul .faq-title .faq-plus span,
-  #lp_business * .faq-main li .faq-title .faq-plus span {
-    width: 4vw;
-    height: 0.5vw;
+  #lp_business * .faq-main ul .faq-title .faq-plus span, #lp_business * .faq-main li .faq-title .faq-plus span {
+    width: 3.333vw;
+    height: 0.267vw;
   }
-  #lp_business * .faq-main ul .faq-title .faq-plus .faq-x,
-  #lp_business * .faq-main li .faq-title .faq-plus .faq-x {
-    width: 4vw;
-    height: 0.5vw;
+  #lp_business * .faq-main ul .faq-title .faq-plus .faq-x, #lp_business * .faq-main li .faq-title .faq-plus .faq-x {
+    width: 3.333vw;
+    height: 0.267vw;
   }
-  #lp_business * .faq-main ul .faq-content,
-  #lp_business * .faq-main li .faq-content {
-    padding: 3.87vw 2.8vw 4.27vw 3.07vw;
-    gap: 0 2.67vw;
-    border: 0.13vw solid #786f63;
-    border-top: none;
+  #lp_business * .faq-main ul .faq-content, #lp_business * .faq-main li .faq-content {
+    padding: 3.867vw 2.8vw 4.267vw 3.067vw;
+    gap: 0 2.667vw;
   }
-  #lp_business * .faq-main ul .faq-content p,
-  #lp_business * .faq-main li .faq-content p {
-    padding-left: 6.667vw;
-    margin-bottom: 2.667vw;
-    font-size: 3.2vw;
-    line-height: 5.467vw;
-    letter-spacing: 0.256vw;
-  }
-  #lp_business * .faq-main ul .faq-content p::after,
-  #lp_business * .faq-main li .faq-content p::after {
+  #lp_business * .faq-main ul .faq-content .faq-answer::after, #lp_business * .faq-main li .faq-content .faq-answer::after {
     width: 4vw;
     height: 7.6vw;
-    top: 0.533vw;
+  }
+  #lp_business * .faq-main ul .faq-content .faq-answer p, #lp_business * .faq-main li .faq-content .faq-answer p {
+    padding-left: 6.667vw;
+    font-size: 3.2vw;
+    line-height: 5.44vw;
+    letter-spacing: 0.256vw;
+  }
+  #lp_business * .faq-main .faq-item:nth-of-type(2) .faq-title {
+    padding-top: 2.667vw;
+    padding-bottom: 2.267vw;
+  }
+  #lp_business * .faq-main .faq-item:nth-of-type(4) .faq-title,
+  #lp_business * .faq-main .faq-item:nth-of-type(5) .faq-title {
+    padding-top: 2.667vw;
+    padding-bottom: 2.133vw;
   }
   #lp_business * .footer-content {
     top: 6.4vw;

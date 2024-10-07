@@ -430,7 +430,6 @@ body {
   #lp_business * .faq-main ul .faq-title, #lp_business * .faq-main li .faq-title {
     padding: 3.067vw;
     gap: 0 2.667vw;
-    border: 0.133vw solid #786F63;
   }
   #lp_business * .faq-main ul .faq-title h3, #lp_business * .faq-main li .faq-title h3 {
     max-width: 74.133vw;
